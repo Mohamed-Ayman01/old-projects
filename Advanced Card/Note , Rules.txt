@@ -1,0 +1,28 @@
+Home icon  --
+
+<i class="fas fa-home"></i>
+
+User icon  --
+
+<i class="fas fa-user-tie"></i>
+
+Grads --
+
+<i class="fas fa-graduation-cap"></i>
+
+Gogs
+
+<i class="fas fa-cogs"></i>
+
+ToolBox
+
+<i class="fas fa-toolbox"></i>
+
+paper 
+
+<i class="fas fa-scroll"></i>
+
+Email
+
+<i class="fas fa-envelope"></i>
+

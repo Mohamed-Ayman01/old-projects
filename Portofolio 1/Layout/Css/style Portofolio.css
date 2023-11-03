@@ -1,0 +1,233 @@
+* {
+    padding:0;
+    margin:0px auto;
+    box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:Arial,Tahoma,Verdana;
+    height:400vh;
+    width:100%;
+    background-color:#2e2e2e;
+    position:relative;
+}
+
+.spans {
+    height:50px;
+    width:50px;
+    padding:10px;
+}
+
+/*      START NAVBAR        */
+
+.navbar {
+    height:60px;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    z-index:1;
+}
+
+.navabr .log {
+    width:30%;
+    position:relative;
+    letter-spacing:4px;
+    transition: all 1s ease-in-out 0s;
+}
+
+.log b {
+    text-decoration:underline 5px;
+}
+
+.log a {
+    color:black;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1em;
+}
+
+.links {
+    width:70%;
+    display:flex;
+    transition: all 1s ease-in-out 0s;
+}
+
+.link ul {
+    list-style:none;
+}
+
+.links li {
+    display:inline-block;
+    padding:5px 10px;
+    margin:20px 5px 20px 10px;
+    letter-spacing:2px;
+    border-radius:5px;
+    transition:all .5s ease-in-out 0s;
+    transition-property:background-color,color;
+}
+
+.links a {
+    transition:all .5s ease-in-out 0s;
+    transition-property:background-color,color;
+    text-decoration:none;
+    color:black;
+}
+
+.links ul li:hover{
+    background-color:#2e2e2e;
+}
+
+.links ul li:hover a {
+    color:white;
+}
+
+@media (max-width:767px) {
+    .navbar {
+        height:60px;
+        width:100%;
+    }
+
+    .links ul li {
+        margin: 18px 2px 5px;
+        padding: 5px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .navbar {
+        height:60px;
+        width:100%;
+    }
+    .links ul li {
+        padding:5px 15px;
+        margin:18px 10px;
+    }
+
+}
+
+@media (max-width:598px) {
+    .links {
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: repeat(5, auto);
+        justify-content: flex-end;
+    }
+
+    ul{
+        background-color: rgba(255, 255, 255, 0.171) !important;
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: repeat(5, auto);
+        justify-content: flex-end;
+    }
+
+    ul li {
+        border-radius: 0px !important;
+        margin: 18px 0px 5px;
+        padding: 5px;
+    }
+}
+
+/*      START NAVBAR        */
+
+/*      START OF SPAN       */
+
+.circ1 {
+    height:200px;
+    width:200px;
+    top:100px;
+    left:150px;
+    position:absolute;
+    border-radius:50%;
+    background-color:#9119ee;
+    box-shadow: 0px 0px 20px #9119ee,
+                0px 0px 40px #9119ee;
+    animation:scale 6s ease-in-out 0s  infinite;
+    animation-direction:alternate;
+    z-index:-1;
+} 
+
+.circ2 {
+    height:200px;
+    width:200px;
+    top:600px;
+    right:150px;
+    position:absolute;
+    border-radius:50%;
+    background-color:#eef432  ;
+    box-shadow: 0px 0px 20px #eef432,
+                0px 0px 40px #eef432;
+    animation:scale 6s ease-in-out 0s  infinite;
+    animation-direction:alternate;
+    z-index:-1;
+}
+
+.circ3 {
+    height:200px;
+    width:200px;
+    top:800px;
+    left:50px;
+    position:absolute;
+    border-radius:50%;
+    background-color:#eef432  ;
+    box-shadow: 0px 0px 20px #eef432,
+                0px 0px 40px #eef432;
+    animation:scale 6s ease-in-out 0s  infinite;
+    animation-direction:alternate;
+    z-index:-1;
+}
+
+
+@keyframes scale {
+    0%,100% {
+        transform:scale(1,1)
+    }
+    25% {
+        transform:scale(.5,.5);
+    }
+    50% {
+        transform:scale(1,1);
+    }
+    75% {
+        transform:scale(.5,.5);
+    }
+    100% {
+        transform:scale(1,1);
+    }
+}
+
+/*      END OF SPAN     */
+
+/*      Start OF CONTAINER      */
+
+.glass {
+    height:150vh;
+    width:100%;
+    margin:0 auto ;
+    padding:20px;
+    box-shadow:0px 0px 10px  #000;
+    backdrop-filter: blur(50px);
+    -o-backdrop-filter: blur(50px);
+    -moz-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    background-color:rgba(255, 255, 255, 0.171);
+    z-index:1;
+}
+
+.conatiner .pics {
+    width:80%;
+}
+
+
+
+/*      END OF CONTAINER        */

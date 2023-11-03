@@ -1,0 +1,66 @@
+***************
+***** NOTES | RULES *****
+***************
+****    Meida Query    ****
+
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+****    Meida Query    ****
+
+1 - pages Home , Portofolio , About Me , Contact me.
+2 - Pages Universials [
+        - P {  
+            height:65px;
+            word-spacing:2px;
+            line-height:30px;
+            font-size:15px;
+        }
+        - h1 {
+            letter-spacing:4px;
+            font-size:42px; // Or font-size:2em; -----
+        }
+        - h2 {
+
+        }
+        - h3 {
+
+        }   
+        -h4 {
+
+        } 
+        -Small-Buttons,a, {
+            padding:5px 15px;
+            margin:0px 10px; // Can Be Changed -----
+            letter-spacing:2px;
+            border-radius:5px;
+            transition:all .5s ease-in-out 0s;
+            transition-property:background-color,color;
+            // On Hover -----
+             background-color:#2e2e2e; 
+             color:white;
+        }
+        -Medium-Buttons,a, {
+            
+            width:20px;
+            height:20px;
+            padding:10px;
+            border:1px solid black;
+            border-radius:5px;
+            color:black;
+            text-decoration:none;
+            margin:192px;   // Can Be Ghanged -----
+            transition: all .5s ease-in-out 0s;
+            transition-property:background-color,color,border;
+
+        }
+
+        //Colors -----
+            #2e2e2e
+            ********** 
+            #9119ee 
+            **********          
+            #eef432  
+]

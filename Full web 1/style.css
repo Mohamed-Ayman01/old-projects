@@ -1,0 +1,259 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0 auto;
+    font-family: arial,tahoma;
+}
+
+.container{
+    width: 100%;
+    height: 2600px;
+    perspective:800px ;
+}
+
+.navbar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    color:white;
+    max-height:70px;
+    background-color:rgb(26, 24, 24);
+    position:fixed;
+    z-index: 5;
+}
+
+.navbar h2{
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.navbar h2 span{
+    color:#9db343;
+}
+
+.navbar ul{
+    flex-grow: 1;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding-left:60px;
+}
+
+.navbar a:hover{
+    color:#9db343;
+    text-shadow: 5px 5px 15px  #9db343,
+                 -5px -5px 15px  #9db343;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    transition:all .4s ease-in-out;
+    transition-property: color,text-shadow;
+}
+
+.image-text{
+    width: 100%;
+    height: 600px;
+    background-image: url('images/Web-design-1920-x-800.jpg');
+    background-size:cover ;
+}
+
+.overlay{
+    background-color:rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    height: 603px;
+    color:#aac737;
+}
+
+.overlay p{
+    margin: 5% 40% 0px 20%;
+}
+
+.overlay h1{
+    margin: 2% 40% 2% 20%;
+}
+
+.overlay p{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.overlay h1{
+    color:white;
+    width: 400px;
+}
+ 
+.overlay span{
+    margin: 1% 5% 0px 20%;
+    font-size:12px;
+    width: 100px;
+    font-weight:normal;
+    color: white;
+    width: 450px;
+}
+
+.green-bar{
+    width: 100%;
+    height: 100px;
+    background-color: #9db343;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.green-bar h2{
+    display: block;
+}
+
+.contact-1{
+    height: 35px;
+    width: 100px;
+    color:white;
+    font-size: 15px;
+    background: none;
+    border:2px solid white;
+    border-radius:20px;
+    transition: all 0.5s ease-in-out;
+    transition-property:color,background-color;
+    position: absolute;
+    bottom:10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-1:hover{
+    background-color: white;
+    color:#9db343;
+}
+
+.our-services{
+    background-color:rgb(233, 233, 233);
+    width: 100% vh;
+    height: 1400px;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.cards{
+    margin:45px 10% 15px 10%;
+    backface-visibility: hidden;
+    width: 400px;
+    height: 600px;
+    color:white;
+    word-spacing: 5px;
+    font-size: 20px;
+    text-align:center;
+    background-color: #9db343;
+    border-radius: 20px;
+    transition:all 0.4s ease-in-out;
+    transition-property: transform;
+}
+
+.cards:hover{
+    transform: translatey(-40px);
+}
+
+.work-ours{
+    width: 100%;
+    height: 400px;
+    position:relative;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-image:url(Images/pexels-pixabay-53621.jpg) ;
+    display: flex;
+    justify-content:flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.half-bob{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.box{
+    height: 50%;
+    width:280px;
+    padding: 20px;
+    margin: 25px;
+    color:rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2.5s ease-in-out;
+    transition-property:background-color;
+    z-index:2;
+}
+
+.black-cover{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+/* Footer Start*/
+.footer{
+    height: 350px;
+    width: 100%;
+    background-color: #2e2e2e;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.links , .meida{
+    height: 350px;
+    width: 30%;
+    margin:10px ;
+    padding: 50px;
+    line-height: 20px;
+    color:white;
+}
+
+.meida a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius:3px;
+    transition:all .5s ease-in-out ;
+    transition-property:transform;
+    display:inline-block;
+}
+.meida a:hover{
+    transform: translatey(-10px);
+    background-color:white;
+    color:#2e2e2e;
+}
+
+.meida span{
+    background-color: rgba(255, 255, 255, .6);
+    margin: 10px;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
+
+/* Footer End*/

@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    background-color: #f7f8f9;
+    width: 100%;
+    height: 100vh;
+    margin:0 0;
+    padding: 0 0; 
+    font-family: sans-serif;
+}
+
+.card {
+    width: 90%;
+    height: 100%;
+    margin: 2.5% auto;
+    box-shadow: 0 0 8px 1px rgba(63, 63, 63, 0.342);
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+.clear {
+    clear:both;
+}
+/*      Start Navbar    */
+.nav {
+    width: 100%;
+    height: 22%;
+    background-color: #2eca7f;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    float: left;
+}
+.logo img {
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    transition-property: border,opacity;
+}
+.logo .head {
+    width:60%;
+    margin: 10px;
+}
+.logo img:hover {
+    border:5px solid white;
+    opacity: 0.8;
+}
+.logo h1 {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    position:relative;
+    width: fit-content;
+}
+.logo h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    -webkit-text-fill-color: white;
+    transition: width 0.5s ease;
+    overflow: hidden;
+}
+.logo h1:hover::before {
+    width: 100%;
+}
+.logo h1, p {
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 2px 10px;
+    height: fit-content;
+}
+.social {
+    width: 50%;
+    height: 110px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social p {
+    width: 100%;
+    margin: auto 0;
+    text-align: left;
+}
+.follow {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+.follow i {
+    font-size: 2em;
+    margin: 10px;
+    margin-left: 0px;
+    transition: transform 0.3s ease; 
+}
+.follow i:hover {
+    transform: scale(1.2,1.2);
+}
+@media(max-width:767px){
+.card {
+    width: 100%;
+    height: 160vh;
+    margin: 0;
+    box-shadow: none;
+}
+.media {
+    visibility: hidden;
+}
+.burger {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: 1s;
+    border-radius: 50%;
+}
+.burger span {
+    width: 100%;
+    margin: 5px auto;
+    height: 4px;
+    background-color: white;
+    transition: opacity 0.3s ease;
+}
+.burger:hover span{
+    opacity: 0.8;
+}
+.burger:hover {
+    transform: rotate(90deg);
+}
+}
+@media (max-width:463px) { /*       Cutom Meida     */
+.social {
+    width: 50%;
+    height: 210.8px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.media {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.burger {
+    width: 13%;
+    height: 30%;
+    position: absolute;
+    right: 2%;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+}
+/*      End Navbar      */
+/*      Start Contnet       */
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #343a40;
+    position: relative;
+    float: left;
+}
+.content aside {
+    height: 100%;
+    width: 20%;
+    padding: 10px;
+}
+.content aside ul {
+    list-style: none;
+    height: 100%;
+    padding: 0;
+}
+.content aside ul li {
+    margin: 45px auto;
+    position: relative;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.content aside i {
+    transition: all .3s ease;
+}
+.content aside ul li:first-of-type {
+    color: #2eca7f;
+    cursor: pointer;
+    overflow: visible;
+}
+.content aside ul li:first-of-type::before{
+    opacity: 1;
+    visibility: visible;
+}
+.content aside ul li::before {
+    content: '';
+    height: 3px;
+    width: 40px;
+    position: absolute;
+    background: linear-gradient(to left, #2eca7f, transparent );
+    top: 50%;
+    left: -67px;
+    transition: all .8s ease;
+    opacity: 0;
+}
+.content aside ul li:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.content aside ul li:hover {
+    color: #2eca7f;
+    cursor: pointer;
+    overflow: visible;
+}
+.svg {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    text-align: center;
+}
+.svg svg {
+    height: 70%;
+    width: 85%;
+}
+.info {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 40px;
+}
+.info h2 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    border-bottom: 1px solid #2eca7f;
+    padding: 5px;
+    width: fit-content;
+    position:relative;
+    overflow: visible;
+}
+.info h2 span {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40%;
+    height: 10px;
+    background-color: #2eca7f;
+    border-radius: 5px;
+}
+.info p {
+    font-size: .9em;
+    padding-top:  10px;
+    line-height: 20px;
+}
+.info a, p:nth-of-type(3){
+    color: #343a40;
+    transition: all 0.3s ease;
+}
+.info a:hover, p:nth-of-type(3):hover{
+    color: #2eca7f;
+}
+.info button {
+    background: #2eca7f;
+    border: none;
+    height: 45px;
+    width: 200px;
+    margin: 20px 5px;
+    color: white;
+    border-radius: 7px;
+    transition: border,color 0.5s ease;
+    overflow: hidden;
+    display: block;
+}
+.info button i {
+    color: #2eca7f;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    padding: 2px;
+    transition: box-shadow 0.5s ease;
+}
+.info button:hover i {
+    box-shadow: 0 0 0 150px white;
+    color: #2eca7f;
+}
+.info button:hover {
+    color: #2eca7f;
+    border: 1px solid #2eca7f;
+}
+.info button:focus {
+    outline: none;
+}
+@media (max-width:767px) {
+.svg {
+    display: none;
+}
+.info {
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    right: auto;
+    padding: 50px 20px;
+}
+}
+@media (max-width:655px) {  /*      Custom Meida        */
+.content aside {
+    height: 100%;
+    width: 100% !important;
+    padding: 5px;
+}
+.content aside ul {
+    height: 15%;
+}
+.content aside ul li {
+    margin: 50px 15px;
+    position: relative;
+    width: 20%;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.content aside ul li::before {
+    content: '';
+    height: 3px;
+    width: 40px;
+    position: absolute;
+    background: linear-gradient(to left, #2eca7f, transparent );
+    top: 100%;
+    left: -100px;
+    transition: all .8s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+.content aside ul li:hover::before {
+    left: 40%;
+}
+}
+@media (max-width:513px) {
+.content aside ul li {
+    margin: 30px 15px;
+    position: relative;
+    width: 50%;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+}
+/*      End Contnet       */

@@ -1,0 +1,14 @@
+******************************
+    *********Rules********    
+******************************
+main-colors [button,Hover ...etc] {
+    #2f9bc1
+    #77af12
+}
+background-color {
+    #f0f0ed
+}
+
+input fiedls {
+    #f7f7f7
+}
